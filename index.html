@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css.css">
+        <link rel="shortcut icon" href="ico.png"/>
+        <title>Генератор</title>
+    </Head>
+    <body id="body">
+        <div class="content" id="content">
+            <div class="fornighttema" id="fornighttema">
+                <button class="night" id="tema" onclick="tema()">   </button>
+            </div>
+            <div class="header" id="header">
+                <strong>Генератор паролей</strong>
+            </div>
+            <p>Представляем вам уникальный генератор паролей!</br>
+                Забудьте о мучениях, генератор сам придумает увлекательные и запоминающищиеся пароли!</br>
+                Не теряйте времени – начните использовать генератор прямо сейчас!</p>
+            <h3>Этим генератором пользовались:</h3>
+            <button class='companies' style="background-image: url(vk.jpg);"></button>
+            <button class='companies' style="background-image: url(yandex.png);"></button>
+            <button class='companies' style="background-image: url(sber.jpg);"></button>
+            <button class="gen" onclick="generate()" id="gen">Сгенерировать </br> пароль</button>
+            <div class="copyandrezult" id='niz'>
+                <input type="text" id="rez" value="Здесь будет пароль" readonly disabled>
+                <button class="copy" onclick="copy()" id="copy">Copy</button>
+            </div>
+            <div class="copyright" id="copyright">&#169; 2023 - <span id='nowyear'></span> Все права защищены</div>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
